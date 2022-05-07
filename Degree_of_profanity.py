@@ -11,6 +11,7 @@ file.close()
 file = open("input_filepath", "r")
 text = " ".join([line.rstrip() for line in file]) # getting all the sentence from the file into a single string value
 sentence_list = re.split(r' *[\.\?!][\'"\)\]]* *', text) # spliting of string text into sentences
+file.close()
 
 
 # The degree of profanity lies between 0 and 1
